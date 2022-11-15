@@ -40,6 +40,12 @@ import {Builder,By, Capabilities, until, WebDriver, WebElement} from "selenium-w
             await input.clear()
             return input.sendKeys(keys)
        }
+    //    async getElement(elementBy: By): Promise<WebElement>{ 
+    //     await this.driver.wait(until.elementLocated(elementBy)) 
+    //     let element = await this.driver.findElement(elementBy)
+    //     await this.driver.wait(until.elementIsVisible(element))
+    //     return element
+    //     }
 }
 
     const emPage = new employeePage(driver)
